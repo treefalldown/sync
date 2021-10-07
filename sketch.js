@@ -12,7 +12,7 @@ let spacer = 50;
 let timeOffset_neighbors = 0;
 let avg = 0;
 
-let randomOffset = 50000000;
+let randomOffset = 5000000;
 
 
 function setup() {
