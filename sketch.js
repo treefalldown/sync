@@ -68,7 +68,7 @@ class Firefly {            // A Firefly object knows about its location in the g
   }
 
   flash() {
-    let angle = random(3);
+    let angle = random(6);
     let t = millis();
     if ((t + this.timeOffset) % 1120 <= 400) {
       strokeWeight(.8);
