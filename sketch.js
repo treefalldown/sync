@@ -22,7 +22,7 @@ function setup() {
   for (let i = 0; i < cols; i++) {
     fireflies[i] = [];
     for (let j = 0; j < rows; j++) {
-      let fireflyOffset = random(500000);
+      let fireflyOffset = random(50000000);
       fireflies[i][j] = new Firefly(i * spacer, j * spacer, 10, fireflyOffset);
     }
   }
