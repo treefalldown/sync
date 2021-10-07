@@ -12,6 +12,8 @@ let spacer = 50;
 let timeOffset_neighbors = 0;
 let avg = 0;
 
+let randomOffset = 500000000;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -22,7 +24,7 @@ function setup() {
   for (let i = 0; i < cols; i++) {
     fireflies[i] = [];
     for (let j = 0; j < rows; j++) {
-      let fireflyOffset = random(50000000);
+      let fireflyOffset = random(randomOffset);
       fireflies[i][j] = new Firefly(i * spacer, j * spacer, 10, fireflyOffset);
     }
   }
@@ -91,7 +93,7 @@ class Firefly {            // A Firefly object knows about its location in the g
     if ((this.tempX < mouseX + 50 && this.tempX > mouseX - 50) && (this.tempY < mouseY + 50 && this.tempY > mouseY - 50)) { // manipulating firefly with mouse
       fill(255, 0 , 0);
       ellipse(mouseX, mouseY, 15, 15);
-      this.timeOffset = random(500000);
+      this.timeOffset = random(randomOffset);
     }
   }
 }
