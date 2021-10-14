@@ -1,6 +1,5 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
+// SYNC
+// Code adapted from Daniel Shiffman (The Nature of Code: http://natureofcode.com)
 
 
 let cols;                     // Number of columns and rows in the grid
