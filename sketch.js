@@ -12,7 +12,7 @@ let spacer = 50;
 let timeOffset_neighbors = 0;
 let avg = 0;
 
-let randomOffset = 50000000000;
+let randomOffset = 500000000;
 
 
 function setup() {
@@ -70,7 +70,7 @@ class Firefly {            // A Firefly object knows about its location in the g
   }
 
   flash() {
-    let angle = random(6);
+    let angle = random(4);
     let t = millis();
     if ((t + this.timeOffset) % 1120 <= 400) {
       strokeWeight(.8);
